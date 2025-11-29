@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mihir Digavalli | Data Engineer</title>
+  <title>Mihir Digavalli | Data & Knowledge Engineering</title>
 
-  <!-- Optional: Google Font -->
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -68,7 +68,7 @@
       top: 0;
       z-index: 50;
       backdrop-filter: blur(16px);
-      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.92), rgba(2, 6, 23, 0.7));
+      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.7));
       border-bottom: 1px solid rgba(31, 41, 55, 0.9);
     }
 
@@ -96,7 +96,7 @@
       background: radial-gradient(circle at 30% 0, #4f46e5, #020617 65%);
       box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.8);
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     .nav-title {
@@ -173,7 +173,6 @@
       box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
     }
 
-    /* Mobile nav toggle */
     .nav-toggle {
       display: none;
       background: transparent;
@@ -199,7 +198,11 @@
       color: var(--text-main);
     }
 
-    /* ===== Hero Section ===== */
+    .nav-links-mobile.open {
+      display: flex;
+    }
+
+    /* ===== Hero ===== */
     .hero {
       padding: 3.75rem 0 3.25rem;
     }
@@ -248,7 +251,7 @@
     .hero-subtitle {
       color: var(--text-muted);
       font-size: 0.98rem;
-      max-width: 520px;
+      max-width: 560px;
       margin-bottom: 1.5rem;
     }
 
@@ -328,7 +331,7 @@
       font-weight: 500;
     }
 
-    /* Hero right */
+    /* Hero right card */
     .hero-card {
       border-radius: var(--radius-xl);
       border: 1px solid rgba(55, 65, 81, 0.9);
@@ -452,7 +455,7 @@
       font-size: 0.78rem;
     }
 
-    /* ===== Section Utility + Scroll Animation ===== */
+    /* ===== Sections + scroll animation ===== */
     section {
       padding: 2.5rem 0 0;
       opacity: 0;
@@ -522,6 +525,7 @@
 
     .about-list-value {
       font-weight: 500;
+      text-align: right;
     }
 
     /* ===== Skills ===== */
@@ -743,6 +747,7 @@
     .contact-value {
       font-weight: 500;
       word-break: break-all;
+      text-align: right;
     }
 
     .social-row {
@@ -810,10 +815,6 @@
         display: block;
       }
 
-      .nav-links-mobile.open {
-        display: flex;
-      }
-
       .hero-title {
         font-size: 2.1rem;
       }
@@ -839,7 +840,7 @@
 </head>
 <body>
 
-  <!-- ===== HEADER / NAVBAR ===== -->
+  <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="container">
       <nav class="nav">
@@ -849,7 +850,7 @@
           </div>
           <div class="nav-title">
             <div class="nav-title-main">Mihir Digavalli</div>
-            <div class="nav-title-sub">Data Engineer</div>
+            <div class="nav-title-sub">Data & Knowledge Engineering · OVGU Magdeburg</div>
           </div>
         </div>
 
@@ -865,13 +866,11 @@
           </a>
         </div>
 
-        <!-- Mobile nav toggle -->
         <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMobileNav()">
           ☰
         </button>
       </nav>
 
-      <!-- Mobile menu -->
       <div id="mobileNav" class="nav-links-mobile">
         <a href="#about" onclick="toggleMobileNav()">About</a>
         <a href="#skills" onclick="toggleMobileNav()">Skills</a>
@@ -882,36 +881,42 @@
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
+  <!-- ===== MAIN ===== -->
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <div class="hero-inner">
           <div>
             <div class="hero-tag">
               <span class="hero-tag-dot"></span>
-              <span>Actively looking for Data Engineer roles</span>
+              <span>Actively looking for data, ML & software roles</span>
             </div>
             <h1 class="hero-title">
               Hi, I'm <span class="accent">Mihir Digavalli</span> 👋
             </h1>
             <p class="hero-subtitle">
-              A <strong>Data Engineer</strong> who enjoys building reliable data pipelines, analytics solutions,
-              and dashboards using <strong>Python, SQL, PySpark, Airflow, Power BI</strong> and cloud platforms
-              like <strong>AWS</strong> and <strong>Azure</strong>.
+              Master’s student in <strong>Data &amp; Knowledge Engineering</strong> at
+              <strong>OVGU Magdeburg</strong>, currently based in Berlin. I work across
+              <strong>data engineering, analytics, machine learning, and software development</strong> –
+              from building data pipelines and anomaly detection systems to dashboards and ML models.
             </p>
 
             <div class="hero-meta">
-              <div class="meta-pill">Data Pipelines · ETL · Analytics</div>
-              <div class="meta-pill">Open to: Full-time · Remote / Hybrid</div>
+              <div class="meta-pill">
+                Open to: Data Engineer · Data Analyst · ML Engineer · Data Scientist · Full Stack · Cloud / AWS roles
+              </div>
+              <div class="meta-pill">
+                Hands-on with Python · SQL · Spark · Airflow · Power BI · AWS · Azure · GCP
+              </div>
             </div>
 
             <div class="hero-actions">
               <a href="#projects" class="btn-primary">
-                <span>View data projects</span>
+                <span>View selected projects</span>
                 <span class="icon">↗</span>
               </a>
-              <!-- Replace # with link to your resume (PDF / Google Drive) -->
+              <!-- TODO: add your resume URL -->
               <a href="#" class="btn-ghost">
                 <span class="icon">📄</span>
                 <span>Download résumé</span>
@@ -919,8 +924,8 @@
             </div>
 
             <p class="hero-secondary-text">
-              Currently: <span>Improving my data engineering & analytics skills</span> · Tech stack:
-              <span>Python · SQL · Power BI · PySpark · Airflow</span>
+              Currently: <span>Working Student · Data Engineering &amp; Analytics at Sofatutor (Berlin)</span> ·
+              Building: <span>ETL pipelines, anomaly detection, and analytics for product teams</span>
             </p>
           </div>
 
@@ -929,37 +934,40 @@
               <div class="avatar-circle">MD</div>
               <div>
                 <div class="avatar-meta-title">Mihir Digavalli</div>
-                <div class="avatar-meta-sub">Data Engineer</div>
+                <div class="avatar-meta-sub">Berlin · Data &amp; ML · Cloud</div>
               </div>
             </div>
 
             <div class="hero-tech-tags">
               <span class="tech-chip">Python</span>
               <span class="tech-chip">SQL</span>
-              <span class="tech-chip">PySpark</span>
+              <span class="tech-chip">Spark</span>
               <span class="tech-chip">Airflow</span>
               <span class="tech-chip">Power BI</span>
               <span class="tech-chip">AWS</span>
               <span class="tech-chip">Azure</span>
+              <span class="tech-chip">GCP</span>
+              <span class="tech-chip">React</span>
             </div>
 
             <div class="hero-highlight-card">
               <div class="hero-highlight-header">
                 <div class="hero-highlight-title">Recent highlight</div>
-                <div class="hero-highlight-badge">Data-driven</div>
+                <div class="hero-highlight-badge">Production-focused</div>
               </div>
               <div class="hero-highlight-body">
-                Designed and implemented data solutions that transform raw data into <strong>actionable insights</strong>
-                using modern data engineering tools and cloud platforms.
+                At Sofatutor, I’ve been designing and automating <strong>ETL pipelines</strong>, building
+                <strong>anomaly detection</strong> for KPIs, and supporting product teams with
+                <strong>data-driven insights</strong>.
               </div>
               <div class="hero-stats">
                 <div>
-                  <div class="hero-stat-label">3+ </div>
-                  <div>Data projects</div>
+                  <div class="hero-stat-label">3+ yrs</div>
+                  <div>Data &amp; software experience</div>
                 </div>
                 <div>
                   <div class="hero-stat-label">Stack</div>
-                  <div>Python · SQL · BI</div>
+                  <div>Python · SQL · Spark · BI</div>
                 </div>
               </div>
             </div>
@@ -968,54 +976,66 @@
       </div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
+    <!-- ABOUT -->
     <section id="about">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">About</h2>
           <p class="section-subtitle">
-            A quick overview of who you are as a Data Engineer, what you enjoy working on, and the kind of roles
-            you’re looking for.
+            A snapshot of my background, what I work on, and the kind of problems I like solving.
           </p>
         </div>
 
         <div class="about-grid">
           <div class="about-card">
             <p>
-              I’m a <strong>Data Engineer</strong> with a strong interest in building
-              <strong>scalable data pipelines, analytics solutions, and dashboards</strong>. I enjoy working with
-              <strong>Python, SQL, PySpark, Airflow, Power BI, AWS, and Azure</strong> to move, transform, and
-              visualize data so that teams can make better decisions.
+              I’m a <strong>Master’s student in Data &amp; Knowledge Engineering</strong> at
+              <strong>Otto von Guericke University Magdeburg</strong>, with hands-on experience across
+              <strong>data engineering, analytics, and machine learning</strong>.
+              I’ve worked with <strong>large datasets, ETL pipelines, anomaly detection, and predictive analytics</strong>
+              in both product and financial domains.
             </p>
             <br />
             <p>
-              I care about <em>clean, reliable, and well-documented</em> data workflows. I like designing
-              ETL/ELT pipelines, optimizing queries, and collaborating with analysts and stakeholders to turn business
-              requirements into data models and reports.
+              Professionally, I’ve contributed as a <strong>Working Student in Data Engineering &amp; Analytics</strong>
+              at Sofatutor (Berlin), a <strong>Data Analyst</strong> at DBS Bank (India), and a
+              <strong>Software Engineer Intern</strong> at ADP, giving me a mix of data, analytics, and
+              software engineering experience.
+            </p>
+            <br />
+            <p>
+              I enjoy designing <em>clean, reliable, and well-documented</em> data workflows,
+              building dashboards for decision-makers, and experimenting with ML models and AI workflows.
             </p>
           </div>
 
           <div class="about-card">
             <ul class="about-list">
               <li>
-                <span class="about-list-label">Role</span>
-                <span class="about-list-value">Data Engineer</span>
+                <span class="about-list-label">Current status</span>
+                <span class="about-list-value">M.Sc. Data &amp; Knowledge Engineering, OVGU</span>
+              </li>
+              <li>
+                <span class="about-list-label">Location</span>
+                <span class="about-list-value">Berlin, Germany</span>
+              </li>
+              <li>
+                <span class="about-list-label">Focus areas</span>
+                <span class="about-list-value">Data Eng · Analytics · ML · Full Stack</span>
               </li>
               <li>
                 <span class="about-list-label">Tech stack</span>
-                <span class="about-list-value">Python, SQL, PySpark, Airflow, Power BI</span>
+                <span class="about-list-value">Python, SQL, Spark, Airflow, Power BI, React</span>
               </li>
               <li>
-                <span class="about-list-label">Cloud</span>
-                <span class="about-list-value">AWS, Azure</span>
+                <span class="about-list-label">Cloud &amp; tools</span>
+                <span class="about-list-value">AWS, Azure, GCP, Kafka, Hive, Jenkins, Git</span>
               </li>
               <li>
-                <span class="about-list-label">Frontend</span>
-                <span class="about-list-value">JavaScript, React</span>
-              </li>
-              <li>
-                <span class="about-list-label">Looking for</span>
-                <span class="about-list-value">Data Engineer / Analytics Engineer roles</span>
+                <span class="about-list-label">Open to</span>
+                <span class="about-list-value">
+                  Data Engineer · Data Analyst · ML Engineer · Data Scientist · Full Stack · Cloud / AWS Architect
+                </span>
               </li>
             </ul>
           </div>
@@ -1023,34 +1043,36 @@
       </div>
     </section>
 
-    <!-- ===== SKILLS ===== -->
+    <!-- SKILLS -->
     <section id="skills">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Skills</h2>
           <p class="section-subtitle">
-            Core technologies and tools I use to build data solutions, pipelines, and dashboards.
+            Technologies and tools I work with across data engineering, analytics, ML, and development.
           </p>
         </div>
 
         <div class="skills-grid">
           <div class="skill-card">
-            <div class="skill-card-title">Languages &amp; Querying</div>
+            <div class="skill-card-title">Programming &amp; Querying</div>
             <div class="skill-chip-row">
               <span class="skill-chip">Python</span>
               <span class="skill-chip">SQL</span>
-              <span class="skill-chip">Java</span>
               <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">Node.js</span>
+              <span class="skill-chip">R</span>
             </div>
           </div>
 
           <div class="skill-card">
-            <div class="skill-card-title">Data Engineering</div>
+            <div class="skill-card-title">Data Engineering &amp; Big Data</div>
             <div class="skill-chip-row">
-              <span class="skill-chip">PySpark</span>
+              <span class="skill-chip">Spark</span>
+              <span class="skill-chip">Hadoop</span>
+              <span class="skill-chip">Apache Hive</span>
+              <span class="skill-chip">Kafka</span>
               <span class="skill-chip">Airflow</span>
-              <span class="skill-chip">ETL / ELT</span>
-              <span class="skill-chip">Data Modeling</span>
             </div>
           </div>
 
@@ -1059,69 +1081,85 @@
             <div class="skill-chip-row">
               <span class="skill-chip">AWS</span>
               <span class="skill-chip">Azure</span>
+              <span class="skill-chip">GCP</span>
               <span class="skill-chip">Power BI</span>
               <span class="skill-chip">Excel</span>
             </div>
           </div>
 
           <div class="skill-card">
-            <div class="skill-card-title">Frontend &amp; Tools</div>
+            <div class="skill-card-title">Data Science &amp; AI</div>
+            <div class="skill-chip-row">
+              <span class="skill-chip">Pandas</span>
+              <span class="skill-chip">NumPy</span>
+              <span class="skill-chip">scikit-learn</span>
+              <span class="skill-chip">PyTorch</span>
+              <span class="skill-chip">TensorFlow</span>
+              <span class="skill-chip">Matplotlib</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-title">Web, Automation &amp; DevOps</div>
             <div class="skill-chip-row">
               <span class="skill-chip">React</span>
-              <span class="skill-chip">REST APIs</span>
-              <span class="skill-chip">Git &amp; GitHub</span>
-              <span class="skill-chip">VS Code</span>
+              <span class="skill-chip">Docker</span>
+              <span class="skill-chip">Jenkins</span>
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">n8n</span>
+              <span class="skill-chip">LangChain</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-title">Languages</div>
+            <div class="skill-chip-row">
+              <span class="skill-chip">English · C1</span>
+              <span class="skill-chip">German · B1</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== PROJECTS ===== -->
+    <!-- PROJECTS -->
     <section id="projects">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Projects</h2>
+          <h2 class="section-title">Selected Projects</h2>
           <p class="section-subtitle">
-            A selection of data engineering and analytics projects. Replace these descriptions with your own
-            real projects and links.
+            A few projects that show how I work with data, ML, automation, and analytics.
           </p>
         </div>
 
         <div class="projects-filters">
           <span class="filter-pill active">All</span>
           <span class="filter-pill">Data Pipelines</span>
-          <span class="filter-pill">Analytics</span>
+          <span class="filter-pill">ML &amp; AI</span>
           <span class="filter-pill">Dashboards</span>
         </div>
 
         <div class="projects-grid">
-
           <!-- Project 1 -->
           <article class="project-card">
-            <div class="project-label">Featured · Data Pipeline</div>
-            <h3 class="project-title">Sales Analytics Data Pipeline</h3>
+            <div class="project-label">AI Workflow Automation</div>
+            <h3 class="project-title">AI Workflow Automation using LangChain &amp; FastAPI</h3>
             <p class="project-description">
-              End-to-end data pipeline that ingests sales data from multiple sources, transforms it using
-              Python / PySpark, and loads it into a data warehouse for reporting in Power BI. Automated
-              using Airflow with daily scheduled runs.
+              Built an AI-powered document analysis pipeline using <strong>Python, LangChain, FastAPI, and OpenAI API</strong>.
+              The system ingests documents, applies NLP and data extraction models, and exposes results via an API for
+              downstream automation and analytics.
             </p>
-
             <div class="project-tags">
               <span class="project-tag">Python</span>
-              <span class="project-tag">PySpark</span>
-              <span class="project-tag">Airflow</span>
-              <span class="project-tag">SQL</span>
-              <span class="project-tag">Power BI</span>
+              <span class="project-tag">LangChain</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">OpenAI API</span>
+              <span class="project-tag">Pandas</span>
             </div>
-
             <div class="project-meta">
-              <span>2025 · Personal project</span>
+              <span>AI · Automation</span>
               <div class="project-links">
-                <!-- Replace # with your live demo link and GitHub repo link -->
-                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                  <span>Live dashboard</span> <span>↗</span>
-                </a>
                 <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
                   <span>Code</span> <span>🐙</span>
                 </a>
@@ -1131,116 +1169,195 @@
 
           <!-- Project 2 -->
           <article class="project-card">
-            <div class="project-label">Analytics Dashboard</div>
-            <h3 class="project-title">Customer Retention Insights</h3>
+            <div class="project-label">Computer Vision · ML</div>
+            <h3 class="project-title">Image Classification using Machine Learning (PyTorch)</h3>
             <p class="project-description">
-              Built an interactive Power BI dashboard to track customer churn, retention, and lifetime
-              value. Data is pulled from a SQL database, cleaned in Python, and refreshed on a schedule.
+              Implemented a convolutional neural network on the <strong>CIFAR-10</strong> dataset using PyTorch.
+              Trained with GPU acceleration, tuned hyperparameters, and applied regularization (dropout, batch
+              normalization) to improve accuracy and generalization.
             </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">PyTorch</span>
+              <span class="project-tag">CIFAR-10</span>
+              <span class="project-tag">NumPy</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">Computer Vision</span>
+            </div>
+            <div class="project-meta">
+              <span>Deep Learning</span>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <span>Code</span> <span>🐙</span>
+                </a>
+              </div>
+            </div>
+          </article>
 
+          <!-- Project 3: CV-style pipeline summary -->
+          <article class="project-card">
+            <div class="project-label">Data Pipeline &amp; Analytics</div>
+            <h3 class="project-title">KPI Monitoring &amp; Anomaly Detection (Sofatutor)</h3>
+            <p class="project-description">
+              Designed and automated <strong>ETL pipelines</strong> with Python, SQL, Airflow, and AWS Redshift to
+              consolidate KPIs from multiple data sources. Implemented statistical analysis and anomaly detection logic
+              to ensure consistent, high-quality metrics for product and research teams.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Airflow</span>
+              <span class="project-tag">SQL</span>
+              <span class="project-tag">AWS Redshift</span>
+              <span class="project-tag">Amplitude</span>
+            </div>
+            <div class="project-meta">
+              <span>Production · Sofatutor</span>
+              <div class="project-links">
+                <a href="#experience" class="project-link">
+                  <span>See role</span> <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: BI-style -->
+          <article class="project-card">
+            <div class="project-label">BI &amp; Dashboards</div>
+            <h3 class="project-title">Financial KPIs &amp; Trading Analytics (DBS Bank)</h3>
+            <p class="project-description">
+              Built <strong>Power BI dashboards</strong> and SQL-based data models to consolidate Murex trading data,
+              enabling senior management to track KPIs, monitor performance trends, and generate financial and
+              regulatory reports.
+            </p>
             <div class="project-tags">
               <span class="project-tag">Power BI</span>
               <span class="project-tag">SQL</span>
-              <span class="project-tag">Python</span>
+              <span class="project-tag">Murex</span>
+              <span class="project-tag">EDA</span>
             </div>
-
             <div class="project-meta">
-              <span>2024 · Analytics project</span>
+              <span>Analytics · DBS</span>
               <div class="project-links">
-                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                  <span>Dashboard</span> <span>↗</span>
-                </a>
-                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                  <span>Code</span> <span>🐙</span>
+                <a href="#experience" class="project-link">
+                  <span>See role</span> <span>↗</span>
                 </a>
               </div>
             </div>
           </article>
-
-          <!-- Project 3 -->
-          <article class="project-card">
-            <div class="project-label">Data Engineering</div>
-            <h3 class="project-title">Log Processing & Monitoring</h3>
-            <p class="project-description">
-              Implemented a pipeline that processes application logs, stores them in a data store, and
-              exposes metrics on a small React-based dashboard for monitoring performance and errors.
-            </p>
-
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">SQL</span>
-              <span class="project-tag">React</span>
-              <span class="project-tag">AWS / Azure</span>
-            </div>
-
-            <div class="project-meta">
-              <span>2023 · Personal / learning project</span>
-              <div class="project-links">
-                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                  <span>Demo</span> <span>↗</span>
-                </a>
-                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                  <span>Code</span> <span>🐙</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
         </div>
       </div>
     </section>
 
-    <!-- ===== EXPERIENCE ===== -->
+    <!-- EXPERIENCE & EDUCATION -->
     <section id="experience">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Experience &amp; Education</h2>
           <p class="section-subtitle">
-            Add internships, full-time roles, projects, and education here. Replace placeholders with your own details.
+            Professional roles and academic background that shaped my data and software skills.
           </p>
         </div>
 
         <div class="timeline">
-
-          <!-- Experience item (sample) -->
+          <!-- Sofatutor -->
           <div class="timeline-item">
             <div>
-              <div class="timeline-role">Data Engineer / Intern</div>
-              <div class="timeline-company">Company Name · Location</div>
-              <div class="timeline-meta">Month YYYY – Present · Internship</div>
+              <div class="timeline-role">Working Student · Data Engineering &amp; Analytics</div>
+              <div class="timeline-company">Sofatutor GmbH · Berlin, Germany</div>
+              <div class="timeline-meta">Nov 2024 – Nov 2025</div>
             </div>
             <div class="timeline-description">
-              • Worked on building and maintaining ETL pipelines using Python, SQL, and Airflow.<br />
-              • Collaborated with analysts to design data models and create datasets for reporting.<br />
-              • Optimized queries and improved pipeline performance / reliability.
+              • Conducted statistical analysis and built <strong>anomaly-detection logic</strong> to keep KPIs
+              consistent across multiple data sources.<br />
+              • Designed and automated <strong>ETL pipelines</strong> using Python, Airflow, and SQL, improving
+              efficiency and reliability.<br />
+              • Worked with <strong>AWS Redshift</strong> and <strong>Amplitude</strong> dashboards to support
+              product and research teams with data-driven insights.
             </div>
           </div>
 
-          <!-- Education item (sample) -->
+          <!-- DBS -->
           <div class="timeline-item">
             <div>
-              <div class="timeline-role">Bachelor's Degree / Program</div>
-              <div class="timeline-company">University / College · Location</div>
-              <div class="timeline-meta">YYYY – YYYY · B.Tech / BSc / etc.</div>
+              <div class="timeline-role">Data Analyst</div>
+              <div class="timeline-company">Development Bank of Singapore (DBS) · India</div>
+              <div class="timeline-meta">Jul 2022 – Mar 2024</div>
             </div>
             <div class="timeline-description">
-              • Relevant coursework: Databases, Data Structures, Algorithms, Data Warehousing, Cloud Computing.<br />
-              • Activities: Hackathons, tech clubs, or data-related projects.
+              • Built interactive <strong>Power BI</strong> dashboards consolidating data from multiple sources
+              for senior management KPIs and performance monitoring.<br />
+              • Developed <strong>SQL queries and stored procedures</strong> to extract and aggregate Murex
+              trading data for financial and regulatory reports.<br />
+              • Performed <strong>EDA and statistical analysis</strong> to identify patterns, trends, and
+              anomalies in financial transaction datasets.
             </div>
           </div>
 
+          <!-- ADP -->
+          <div class="timeline-item">
+            <div>
+              <div class="timeline-role">Software Engineer Intern</div>
+              <div class="timeline-company">ADP · India</div>
+              <div class="timeline-meta">Jun 2021 – Oct 2021</div>
+            </div>
+            <div class="timeline-description">
+              • Built frontend components using <strong>React</strong> and contributed to application logic.<br />
+              • Developed and deployed backend components in <strong>Docker</strong> containers to support
+              reproducible testing and integration.<br />
+              • Collaborated with engineers on debugging, feature development, and deployment workflows.
+            </div>
+          </div>
+
+          <!-- OVGU -->
+          <div class="timeline-item">
+            <div>
+              <div class="timeline-role">M.Sc. Data &amp; Knowledge Engineering</div>
+              <div class="timeline-company">Otto von Guericke University Magdeburg · Germany</div>
+              <div class="timeline-meta">2024 – 2027</div>
+            </div>
+            <div class="timeline-description">
+              • Focus on data engineering, machine learning, data mining, and knowledge representation.<br />
+              • Projects involving pipelines, predictive models, and intelligent systems using Python, SQL,
+              Spark, and modern ML frameworks.
+            </div>
+          </div>
+
+          <!-- B.Tech -->
+          <div class="timeline-item">
+            <div>
+              <div class="timeline-role">B.Tech in Information Technology</div>
+              <div class="timeline-company">CVR College of Engineering · Hyderabad, India</div>
+              <div class="timeline-meta">2018 – 2022</div>
+            </div>
+            <div class="timeline-description">
+              • Core subjects: Data Structures, Algorithms, Databases, Networking, and Web Development.<br />
+              • Participated in projects and coursework that sparked my interest in data and software engineering.
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="timeline-item">
+            <div>
+              <div class="timeline-role">Certifications</div>
+              <div class="timeline-company">Cloud &amp; AI</div>
+              <div class="timeline-meta">2024 – 2025</div>
+            </div>
+            <div class="timeline-description">
+              • AWS Cloud Practitioner Certification (Mar 2025).<br />
+              • Career Essentials in Generative AI by Microsoft &amp; LinkedIn (2024).
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
+    <!-- CONTACT -->
     <section id="contact">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Contact</h2>
           <p class="section-subtitle">
-            The easiest ways to reach me and see more of my work. Update this with your real email, phone,
-            and profile links.
+            Best ways to reach me and see more of my work. Always open to discussing roles, projects, and collaborations.
           </p>
         </div>
 
@@ -1248,40 +1365,44 @@
           <div class="contact-card">
             <div class="contact-line">
               <span class="contact-label">Email</span>
-              <!-- Replace with your real email -->
-              <a href="mailto:mihir.digavalli@example.com" class="contact-value">
-                mihir.digavalli@example.com
+              <a href="mailto:mihirdigavalli2014@gmail.com" class="contact-value">
+                mihirdigavalli2014@gmail.com
               </a>
             </div>
             <div class="contact-line">
               <span class="contact-label">Phone</span>
-              <!-- Replace with your real phone -->
-              <span class="contact-value">+91-XXXXXXXXXX</span>
+              <span class="contact-value">+49 1556 0024775</span>
             </div>
             <div class="contact-line">
               <span class="contact-label">Location</span>
-              <span class="contact-value">Your City, India</span>
+              <span class="contact-value">Berlin, Germany</span>
             </div>
 
             <div class="social-row">
-              <!-- Replace # with your actual profile links -->
-              <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
-              <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill">LinkedIn</a>
-              <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill">Power BI / Portfolio</a>
-              <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill">LeetCode / HackerRank</a>
+              <a href="https://linkedin.com/in/mihirdigavalli" target="_blank" rel="noopener noreferrer" class="social-pill">
+                LinkedIn
+              </a>
+              <!-- TODO: add your real GitHub link -->
+              <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill">
+                GitHub
+              </a>
+              <!-- Optional: portfolio / BI gallery / Kaggle -->
+              <a href="#" target="_blank" rel="noopener noreferrer" class="social-pill">
+                BI / ML Portfolio
+              </a>
             </div>
           </div>
 
           <aside class="contact-side">
             <p>
-              I’m interested in <strong>Data Engineer</strong>, <strong>Analytics Engineer</strong>, and
-              <strong>Data-focused Software Engineer</strong> roles where I can work on data pipelines,
-              analytics, and dashboards using my current tech stack.
+              I’m particularly interested in roles where I can combine <strong>data engineering</strong>,
+              <strong>analytics</strong>, and <strong>machine learning</strong> – ideally in cloud-based,
+              data-driven products.
             </p>
             <br />
             <p>
-              Feel free to reach out if you’d like to discuss an opportunity or see more of my work.
-              I’m always open to learning, collaborating, and contributing to data-driven teams.
+              If my profile looks relevant for your team, feel free to reach out via email or LinkedIn.
+              I’m happy to share more details, code samples, or walkthroughs of my projects.
             </p>
           </aside>
         </div>
@@ -1289,7 +1410,7 @@
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div>© <span id="year"></span> <span>Mihir Digavalli</span>. All rights reserved.</div>
@@ -1297,10 +1418,10 @@
   </footer>
 
   <script>
-    // Update the year automatically
+    // Update year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Mobile nav toggle function
+    // Mobile nav toggle
     function toggleMobileNav() {
       const mobileNav = document.getElementById("mobileNav");
       mobileNav.classList.toggle("open");
